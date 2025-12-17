@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dog Walker e Pet Sitter em sua cidade | Simone Martins</title>
+    <title>Dog Walker e Pet Sitter | Simone Martins</title>
 
     <meta name="description" content="Dog Walker e Pet Sitter com atendimento domiciliar. Passeios, cuidados personalizados e carinho para seu pet. Agende pelo WhatsApp.">
 
-    <!-- SEO Local -->
     <meta name="robots" content="index, follow">
 
     <!-- Tailwind -->
@@ -20,28 +19,40 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <style>
-        body { font-family: 'Open Sans', sans-serif; }
-        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
-    </style>
+	<style>
+		:root {
+			--bg-body: #E5E7EB;
+			--hero-from: #FB923C;
+			--hero-to: #F97316;
+		}
 
-    <!-- Schema.org -->
+		body {
+			font-family: 'Open Sans', sans-serif;
+			background: var(--bg-body);
+			transition: background 0.8s ease;
+		}
+
+		h1, h2, h3 {
+			font-family: 'Montserrat', sans-serif;
+		}
+	</style>
+
+    <!-- SEO Local -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Simone Martins - Dog Walker & Pet Sitter",
-      "description": "Passeios e cuidados personalizados para pets no conforto do lar.",
       "telephone": "+5521972045256",
-      "areaServed": "Brasil",
+      "description": "Passeios e cuidados personalizados para cães e gatos.",
       "sameAs": ["https://wa.me/5521972045256"]
     }
     </script>
 </head>
 
-<body class="bg-[#F6F6F4] text-gray-800 scroll-smooth">
+<body class="min-h-screen text-gray-800 scroll-smooth">
 
-<!-- HEADER FIXO -->
+<!-- HEADER -->
 <header class="fixed top-0 w-full bg-white/90 backdrop-blur shadow z-50">
     <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
         <span class="font-extrabold text-orange-500 text-lg">
@@ -58,7 +69,8 @@
 <div class="h-16"></div>
 
 <!-- HERO -->
-<section class="relative bg-gradient-to-br from-orange-400 to-orange-500">
+<section class="relative"
+         style="background: linear-gradient(135deg, var(--hero-from), var(--hero-to));">
     <div class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
 
         <div class="text-white">
@@ -71,20 +83,22 @@
             </p>
 
             <div class="mt-8">
-                <a href="https://wa.me/5521972045256?text=Olá,%20gostaria%20de%20agendar%20um%20serviço!"
+                <a href="https://wa.me/5521972045256"
                    class="bg-green-500 hover:bg-green-600 transition text-white font-bold px-8 py-4 rounded-full shadow-xl inline-block">
                     <i class="fab fa-whatsapp mr-2"></i> Agendar pelo WhatsApp
                 </a>
             </div>
         </div>
 
-		<div class="relative">
-		<img src="https://optimumpet.com.br/media/uploads/2025/04/o-que-gatos-e-cachorros-pensam.jpg"
-			 alt="Cachorro e gato felizes sob cuidados"
-			 loading="eager"
-			 class="rounded-3xl shadow-2xl object-cover w-full h-[420px]">
-		<div class="absolute inset-0 rounded-3xl bg-black/10"></div>
-		</div>
+
+
+        <div class="relative">
+			<img src="IMG/gato-e-cachorro-felizes.webp"
+				 alt="Cachorro e gato felizes juntos"
+				 loading="eager"
+				 class="rounded-3xl shadow-2xl object-cover w-full h-[420px]">
+				<div class="absolute inset-0 rounded-3xl bg-black/10"></div>
+        </div>
     </div>
 </section>
 
@@ -98,54 +112,30 @@
         <div class="bg-white rounded-2xl p-6 shadow hover:shadow-xl transition text-center">
             <i class="fas fa-heart text-orange-500 text-3xl mb-4"></i>
             <h3 class="font-bold mb-2">Amor e atenção</h3>
-            <p class="text-sm text-gray-600">Seu pet tratado com respeito e carinho.</p>
+            <p class="text-sm text-gray-600">Seu pet tratado como família.</p>
         </div>
 
         <div class="bg-white rounded-2xl p-6 shadow hover:shadow-xl transition text-center">
             <i class="fas fa-home text-orange-500 text-3xl mb-4"></i>
             <h3 class="font-bold mb-2">Ambiente familiar</h3>
-            <p class="text-sm text-gray-600">Menos estresse, mais bem-estar.</p>
+            <p class="text-sm text-gray-600">Mais conforto e menos estresse.</p>
         </div>
 
         <div class="bg-white rounded-2xl p-6 shadow hover:shadow-xl transition text-center">
             <i class="fas fa-clock text-orange-500 text-3xl mb-4"></i>
             <h3 class="font-bold mb-2">Pontualidade</h3>
-            <p class="text-sm text-gray-600">Compromisso com a rotina do seu pet.</p>
+            <p class="text-sm text-gray-600">Rotina respeitada.</p>
         </div>
 
         <div class="bg-white rounded-2xl p-6 shadow hover:shadow-xl transition text-center">
             <i class="fas fa-shield-dog text-orange-500 text-3xl mb-4"></i>
             <h3 class="font-bold mb-2">Segurança</h3>
-            <p class="text-sm text-gray-600">Passeios supervisionados e responsáveis.</p>
+            <p class="text-sm text-gray-600">Passeios responsáveis.</p>
         </div>
     </div>
 </section>
 
-<!-- SERVIÇOS -->
-<section class="bg-white py-20">
-    <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Serviços</h2>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="rounded-2xl border p-8 hover:shadow-xl transition">
-                <h3 class="font-bold text-xl mb-2">🐕 Passeios com cães</h3>
-                <p class="text-gray-600 text-sm">Exercício, rotina e estímulo diário.</p>
-            </div>
-
-            <div class="rounded-2xl border p-8 hover:shadow-xl transition">
-                <h3 class="font-bold text-xl mb-2">🏡 Pet Sitter</h3>
-                <p class="text-gray-600 text-sm">Cuidados completos no conforto do lar.</p>
-            </div>
-
-            <div class="rounded-2xl border p-8 hover:shadow-xl transition">
-                <h3 class="font-bold text-xl mb-2">🛁 Banho & cuidados</h3>
-                <p class="text-gray-600 text-sm">Higiene básica com carinho e atenção.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA FINAL -->
+<!-- CTA -->
 <section class="bg-gray-900 text-white py-20 text-center">
     <h2 class="text-3xl font-bold mb-4">
         Pronto para cuidar melhor do seu pet?
@@ -160,16 +150,70 @@
     </a>
 </section>
 
-<!-- FOOTER -->
 <footer class="bg-black text-gray-400 text-center py-6 text-sm">
     © 2025 • Simone Martins • Dog Walker & Pet Sitter
 </footer>
 
-<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<!-- WHATSAPP FLUTUANTE -->
 <a href="https://wa.me/5521972045256"
    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 transition text-white w-16 h-16 flex items-center justify-center rounded-full shadow-2xl z-50">
     <i class="fab fa-whatsapp text-3xl"></i>
 </a>
+
+<!-- 🎨 SCRIPT DE COR POR DIA -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const temasPorDia = {
+        0: { // Domingo
+            body: "linear-gradient(135deg, #FEF3C7, #FDE68A)",
+            heroFrom: "#FDE68A",
+            heroTo: "#F59E0B"
+        },
+        1: { // Segunda
+            body: "#E5E7EB",
+            heroFrom: "#D1D5DB",
+            heroTo: "#9CA3AF"
+        },
+        2: { // Terça
+            body: "#DCFCE7",
+            heroFrom: "#86EFAC",
+            heroTo: "#22C55E"
+        },
+        3: { // Quarta
+            body: "#E0F2FE",
+            heroFrom: "#7DD3FC",
+            heroTo: "#38BDF8"
+        },
+        4: { // Quinta
+            body: "#F3E8FF",
+            heroFrom: "#C4B5FD",
+            heroTo: "#8B5CF6"
+        },
+        5: { // Sexta 🎉
+            body: "linear-gradient(135deg, #FFE4E6, #FBCFE8)",
+            heroFrom: "#FB7185",
+            heroTo: "#EC4899"
+        },
+        6: { // Sábado
+            body: "#FEF9C3",
+            heroFrom: "#FDE047",
+            heroTo: "#EAB308"
+        }
+    };
+
+    const hoje = new Date().getDay();
+    const tema = temasPorDia[hoje];
+
+    document.documentElement.style.setProperty("--bg-body", tema.body);
+    document.documentElement.style.setProperty("--hero-from", tema.heroFrom);
+    document.documentElement.style.setProperty("--hero-to", tema.heroTo);
+
+    if (hoje === 5) {
+        console.log("🐾 Sexta Pet Feliz ativada!");
+    }
+});
+</script>
 
 </body>
 </html>
